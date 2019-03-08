@@ -5,16 +5,36 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "benchmark": "^2.1.4",
     "react": "16.8.3",
     "react-dom": "16.8.3",
     "react-scripts": "2.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/benchmark": "^1.0.31",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "faker": "^4.1.0",
+    "jest": "^23.6.0",
+    "jest-cli": "^24.3.1",
+    "jest-enzyme": "^7.0.2",
+    "jest-puppeteer": "^4.0.0",
+    "puppeteer": "^1.13.0",
+    "react-test-renderer": "^16.8.4"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test:integration": "jest -c ./src/integration/jest.config.js",
+    "test:integration-watch": "jest -c ./src/integration/jest.config.js --watch",
+    "eject": "react-scripts eject",
+    "pretest": "mkdir -p .screenshots/"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
