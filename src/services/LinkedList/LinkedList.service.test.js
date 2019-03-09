@@ -15,6 +15,4 @@ it("LinkedList remove element", function() {
   console.log("TEST REMOVE LOG:==>", ll.toString());
 
   expect(ll.size()).toBe(3);
-
-
 });

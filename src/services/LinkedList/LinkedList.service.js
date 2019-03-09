@@ -4,6 +4,32 @@ import Node from "./BaseLinkedListNode.service";
 * A linked list is an ordered collection of data elements.
 * A data element can be represented as a node in a linked list.
 * Each node consists of two parts: data & pointer to the next node.
+*
+*                 Linked List        Array
+*
+* Insert at        O(1)               O(n)
+* beginning
+*
+* Remove from      O(1)               O(n)
+* beginning
+*
+* Insert           O(1), O(n) *       O(1)
+* at end
+*
+* Remove           O(1), O(n)         O(1)
+* from end
+*
+* Insert           O(1), O(n) *       O(n)
+* in middle
+*
+* Remove from      O(n), O(n)         O(n)
+* middle
+*
+* Find / Get       O(n)               O(1)
+* item at index
+*
+* Wasted           O(n)               0
+* Space
 * */
 class LinkedList {
 
