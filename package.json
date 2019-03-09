@@ -93,7 +93,7 @@
     "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.{js,jsx}",
-      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx}"
+      "<rootDir>/src/**/?(*.)(spec|test|e2e).{js,jsx}"
     ],
     "testEnvironment": "jsdom",
     "testURL": "http://localhost",

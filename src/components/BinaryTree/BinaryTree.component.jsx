@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import BinaryTreeService from "./../services/BinaryTree.service";
+import BinaryTreeService from "../../services/BinaryTree/BinaryTree.service";
 
 const binaryTree = new BinaryTreeService();
 
@@ -23,7 +23,7 @@ class BinaryTree extends Component {
     }
     return (
       <React.Fragment>
-        React hello
+        BinaryTree
       </React.Fragment>);
   }
 }

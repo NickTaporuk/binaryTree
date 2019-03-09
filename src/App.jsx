@@ -19,14 +19,15 @@ class App extends Component {
   handleClick = () => {
     this.setState({
       started: !this.state.started
-    })
+    });
   };
 
   render() {
     return (
       <div className='apps'>
-        <div data-hook="hi button" onClick={this.handleClick}>Start</div>
+        <div data-hook="hi-button" onClick={this.handleClick}>Start</div>
 
+        {this.state.started && <span data-hook="hi-text">Hi. Provide some info</span>}
         {this.state.started && <Form onSubmit={this.handleFormSubmit}/>}
       </div>
     );

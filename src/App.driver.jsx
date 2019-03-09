@@ -5,7 +5,7 @@ const Driver = () => {
   const driver = {
     get: {
       button(){
-        return driver.component.find("[data-hook=\"hi button\"]")
+        return driver.component.find("[data-hook=\"hi-button\"]")
       }
     },
     when: {
@@ -25,10 +25,10 @@ const Driver = () => {
     },
     is: {
       buttonPresent() {
-        return !!driver.component.find("[data-hook=\"hi button\"]").length;
+        return !!driver.component.find('[data-hook="hi-button"]').length;
       },
       formPresent() {
-        return !!driver.component.find("[data-hook=\"hi form\"]").length;
+        return !!driver.component.find('[data-hook="hi-form"]').length;
       }
     },
     detach() {
